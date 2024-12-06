@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3.9.2'
-            args '-v /root/.m2:/root/.m2'
+            image 'maven:3.9.0'
+            args '-u root -v /root/.m2:/root/.m2'
         }
     }
     stages {
